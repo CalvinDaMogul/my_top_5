@@ -82,6 +82,12 @@ const albums = [
   } 
 ]
 
+const printToDom = (divId, textToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+      selectedDiv.innerHTML = textToPrint;
+        console.log(selectedDiv);
+};	
+
 const albumBuilder = (arrayToPrint) => {
     let domString = '';
     arrayToPrint.forEach((albums) => {
@@ -94,14 +100,15 @@ const albumBuilder = (arrayToPrint) => {
         domString += `<p id="font">${albums.Description}</p>`;
         domString += `</div>`;
         domString += `</div>`;
-    });
-
-    printToDom('myAlbums', domString);
-  };
-  
+      });
+      
+      printToDom('myAlbums', domString);
+    };
+    
 
 const init = () => {
     albumBuilder(albums);
 };
 
 init();
+
