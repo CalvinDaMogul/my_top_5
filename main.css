@@ -1,3 +1,35 @@
 body {
-    background-color: brown;
+    background-color: #8d0801;
 }
+
+#myAlbums {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+  
+    }
+
+.card {
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 6px solid darkgray;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px; 
+    background: #708d81;
+  }
+
+  .card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+  }
+
+  #font {
+      color: 001427;
+  }
