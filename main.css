@@ -30,7 +30,19 @@ body {
     border-radius: 25px;
   }
 
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  #title {
+    color: 001427;
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    font-size: 60px;
+  }
+
   #font {
       color: 001427;
       font-family: 'Merriweather', serif;
+      font-size: 15px;
   }

@@ -34,11 +34,11 @@ const albums = [
 },
 
 {
-    title: 'Nothing Was the Same',
-    artist: 'Drake',
-    releaseDate: '2013',
+    title: 'Victory Lap',
+    artist: 'Nipsey Hussle',
+    releaseDate: '2018',
     Description: '',
-    imageUrl: 'https://www.udiscovermusic.com/wp-content/uploads/2018/09/Drake-Nothing-Was-The-Same-deluxe-album-cover-web-optimised-820.jpg'
+    imageUrl: 'https://cdn-images-1.medium.com/max/1200/1*iEVGKX5GIcIRxztd9p2w5g.jpeg'
 }
 ];
 
@@ -60,6 +60,7 @@ const albumBuilder = (arrayToPrint) => {
         domString += `<p id="font">Artist: ${albums.artist}</p>`;
         domString += `<p id="font">Release Date: ${albums.releaseDate}</p>`;
         domString += `<p id="font">${albums.Description}</p>`;
+        domString += `<button type="button" class="btn btn-secondary">Description</button>`
         domString += `</div>`;
         domString += `</div>`;
     });
