@@ -33,13 +33,13 @@ const albums = [
     imageUrl: "https://cdn.vox-cdn.com/thumbor/oHfVEplZ502yIfrNi4hYgFOUSNM=/0x271:1024x954/1200x800/filters:focal(0x271:1024x954)/cdn.vox-cdn.com/uploads/chorus_image/image/48799109/TLOPGenerator.0.0.png"
   },
 
-  {
-    title: "Nothing Was the Same",
-    artist: "Drake",
-    releaseDate: "2013",
-    Description: "",
-    imageUrl: "https://www.udiscovermusic.com/wp-content/uploads/2018/09/Drake-Nothing-Was-The-Same-deluxe-album-cover-web-optimised-820.jpg"
-  },
+{
+    title: 'Victory Lap',
+    artist: 'Nipsey Hussle',
+    releaseDate: '2018',
+    Description: '',
+    imageUrl: 'https://cdn-images-1.medium.com/max/1200/1*iEVGKX5GIcIRxztd9p2w5g.jpeg'
+},
 
   {
     title: "Good Kid, m.A.A.d city",
@@ -98,6 +98,7 @@ const albumBuilder = (arrayToPrint) => {
         domString += `<p id="font">Artist: ${albums.artist}</p>`;
         domString += `<p id="font">Release Date: ${albums.releaseDate}</p>`;
         domString += `<p id="font">${albums.Description}</p>`;
+        domString += `<button type="button" class="btn btn-secondary">Description</button>`
         domString += `</div>`;
         domString += `</div>`;
       });
