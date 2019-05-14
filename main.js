@@ -41,7 +41,9 @@ const albums = [
     imageUrl: 'https://cdn-images-1.medium.com/max/1200/1*iEVGKX5GIcIRxztd9p2w5g.jpeg'
 },
 
-  {
+]
+const glennTop = [ 
+  {      
     title: "Good Kid, m.A.A.d city",
     artist: "Kendrick Lamar",
     releaseDate: "2012",
@@ -79,13 +81,19 @@ const albums = [
     releaseDate: "2015",
     Description: "",
     imageUrl: "https://media.pitchfork.com/photos/5929b09c5e6ef95969321fcb/1:1/w_600/3a0607ec.jpg"
-  } 
+  }
 ]
 
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
       selectedDiv.innerHTML = textToPrint;
         console.log(selectedDiv);
+};	
+
+const printToDom2 = (divId2, displayText) => {
+    const selectedDiv2 = document.getElementById(divId2);
+      selectedDiv2.innerHTML = displayText;
+        console.log(selectedDiv2);
 };	
 
 const albumBuilder = (arrayToPrint) => {
@@ -105,10 +113,29 @@ const albumBuilder = (arrayToPrint) => {
       
       printToDom('myAlbums', domString);
     };
+
+    const albumList = (albumsToPrint) => {
+    let bumString = '';
+    albumsToPrint.forEach((glennTop) => {
+        bumString += `<div class="card">`;
+        bumString += `<h2 id="font">${glennTop.title}</h2>`;
+        bumString += `<img src=${glennTop.imageUrl}></img>`;
+        bumString += `<div class="pcard">`;
+        bumString += `<p id="font">Artist: ${glennTop.artist}</p>`;
+        bumString += `<p id="font">Release Date: ${glennTop.releaseDate}</p>`;
+        bumString += `<p id="font">${glennTop.Description}</p>`;
+        bumString += `<button type="button" class="btn btn-secondary">Description</button>`
+        bumString += `</div>`;
+        bumString += `</div>`;
+      });
+      
+      printToDom2('gdTopFive', bumString);
+    };
     
 
 const init = () => {
     albumBuilder(albums);
+    albumList(glennTop);
 };
 
 init();

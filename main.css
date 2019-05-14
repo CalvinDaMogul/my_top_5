@@ -1,48 +1,69 @@
 body {
-    background-color: #8d0801;
+    background-image: url(img/West_Cudi.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }
 
-#myAlbums {
+#myAlbums, #gdTopFive {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
     flex-direction: row;
-  
-    }
+  }
 
 .card {
-    width: 300px;
+    width: 200px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 6px solid darkgray;
-    color: white;
+     border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#FF7F11), to(rgba(1, 1, 1, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#FF7F11, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#FF7F11, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#FF7F11, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #FF7F11, rgba(0, 0, 0, 0)) 1 100%;
+    color: black;
     text-align: center;
-    border-radius: 25px;
-    padding: 20px; 
-    background: #708d81;
+    border-radius: 5px;
+    padding: 10px; 
+    background: rgb(29, 29, 29);
   }
 
   .card img {
-    height: 200px;
-    width: 200px;
-    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid #fff;
+    margin: 0 auto;
   }
 
   .card:hover {
     transform: scale(1.1);
   }
 
+  .btn {
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom right, #ff7f11, #de1a1a);
+  }
+
   #title {
-    color: 001427;
+    color: #fff;
     font-family: 'Vollkorn', serif;
     text-align: center;
     font-size: 60px;
   }
 
   #font {
-      color: 001427;
+      color: #fff;
       font-family: 'Merriweather', serif;
       font-size: 15px;
   }
