@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,6 +9,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+  background-color: rgb(29, 29, 29);
+  border-bottom: 1.5px solid #FF7F11;
 }
 
 li, a, button {
@@ -29,19 +31,21 @@ li, a, button {
 
 .nav_links li a {
   transition: all 0.3s ease 0s;
+  color: #FF7F11;
 }
 
 .nav_links li a:hover {
-  color: #0088a9;
+  color: #de1a1a;
 }
 
 button {
   padding: 9px 25px;
-  background-color: #0088a9;
+  background-image: linear-gradient(to bottom right, #ff7f11, #de1a1a);;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s; 
+  color: rgb(29, 29, 29);
 }
 
 body {
